@@ -18,7 +18,7 @@ const {
     getStalk,
     getStory,
     skbuffer
-} = require('raganork-bot');
+} = require('adimakannan-bot');
 const Config = require('../config');
 const s = require('../config');
 var need = "*_Need instagram link!_*";
@@ -29,7 +29,7 @@ var need_acc_s = "_Need an instagram username or link!_";
 let sourav = setting.MODE == 'public' ? false : true
 Module({
     pattern: 'insta ?(.*)',
-    fromMe: sourav,
+    fromMe: adarsh,
     desc: 'Downloads post/reel/igtv from instagram',
     usage: 'insta link or reply to a link'
 }, (async (msg, query) => {
@@ -73,7 +73,7 @@ Module({
 }));
 Module({
     pattern: 'ig ?(.*)',
-    fromMe: sourav,
+    fromMe: adarsh,
     desc: 'Gets account info from instagram',
     usage: 'ig username'
 }, (async (msg, query) => {
@@ -98,7 +98,7 @@ Module({
 }));
 Module({
     pattern: 'story ?(.*)',
-    fromMe: sourav,
+    fromMe: adarsh,
     desc: 'Downloads full/single story from instagram',
     usage: '.story username or link'
 }, (async (msg, query) => {
