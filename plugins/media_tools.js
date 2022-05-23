@@ -15,7 +15,7 @@ const {
       trim,
       AVmix,
       trimVideo
-  } = require('raganork-bot');
+  } = require('adimakannan-bot');
   const {
       MODE
   } = require('../config');
