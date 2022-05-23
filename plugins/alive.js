@@ -30,13 +30,13 @@ Module({
   var myid = message.client.user.id.split(":")[0]
   var buttons = [{
     urlButton: {
-        displayText: 'Github',
-        url: 'https://github.com/souravkl11/raganork'
+        displayText: 'Wa Group',
+        url: 'https://chat.whatsapp.com/HwdDqRM8cGS4o2BmxRwP1c'
     }
 }, {
     callButton: {
         displayText: 'Contact Owner',
-        phoneNumber: BOT_INFO.split(";")[2]
+        phoneNumber: '916238054812', 
     }
 }, {
     quickReplyButton: {
@@ -54,10 +54,10 @@ Module({
         id: 'support'+myid
     }
 }]
-var menu = `╭═══〘 ${BOT_INFO.split(";")[0]} 〙═══⊷❍
+var menu = `╭═══〘 ᴀᴅɪᴍᴀ ᴋᴀɴɴᴀɴ 〙═══⊷❍
 ┃✩╭──────────────
 ┃✩│
-┃✩│ Owner : ${BOT_INFO.split(";")[1]}
+┃✩│ Owner : ᴠɪᴘᴇʀ
 ┃✩│ User : ${message.senderName}
 ┃✩│ Mode : ${MODE}
 ┃✩│ Server : ${config.HEROKU.APP_NAME}
@@ -68,7 +68,7 @@ var menu = `╭═══〘 ${BOT_INFO.split(";")[0]} 〙═══⊷❍
 ┃✩│
 ┃✩│  ▎▍▌▌▉▏▎▌▉▐▏▌▎
 ┃✩│  ▎▍▌▌▉▏▎▌▉▐▏▌▎
-┃✩│   ${BOT_INFO.split(";")[0]}
+┃✩│   ᴀᴅɪᴍᴀ ᴋᴀɴɴᴀɴ
 ┃✩│ 
 ┃✩╰───────────────
 ╰═════════════════⊷
@@ -108,7 +108,7 @@ var menu = `╭═══〘 ${BOT_INFO.split(";")[0]} 〙═══⊷❍
 ┃✩│ gif
 ┃✩╰─────────────────
 ╰══════════════════⊷❍`
-return await message.sendImageTemplate(await skbuffer(BOT_INFO.split(";")[3]),FancyRandom(menu),"All rights reserved "+BOT_INFO.split(";")[0],buttons);
+return await message.sendImageTemplate(await skbuffer(BOT_INFO.split(";")[3]),FancyRandom(menu),"All rights reserved ᴀᴅɪᴍᴀ ᴋᴀɴɴᴀɴ"
 }))
 Module({
   pattern: 'alive',
@@ -133,7 +133,7 @@ if (button) {
     const end = new Date().getTime()
     await message.sendReply(FancyRandom('Pong!\n ```' + (end - start) + '``` *ms*')) 
   }
-  if (button.includes(myid)&&button.startsWith("support")) return await message.sendReply(BOT_INFO.split(";")[4])
+  if (button.includes(myid)&&button.startsWith("support")) return await message.sendReply ᴀᴅɪᴍᴀ ᴋᴀɴɴᴀɴ ʙɪᴛ
 } 
 }))
 Module({
