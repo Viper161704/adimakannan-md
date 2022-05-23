@@ -28,7 +28,7 @@ const {
     getVideo,
     ytdlServer,
     skbuffer
-} = require('raganork-bot');
+} = require('adimakannan-bot');
 const ytdl = require('ytdl-core');
 const LanguageDetect = require('languagedetect');
 const lngDetector = new LanguageDetect();
