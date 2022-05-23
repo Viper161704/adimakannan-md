@@ -27,12 +27,12 @@ const {
     ytdlServer,
     getVideo,
     addInfo
-} = require('raganork-bot');
+} = require('adimakannan-bot');
 let sourav = MODE == 'public' ? false : true
 const getID = /(?:http(?:s|):\/\/|)(?:(?:www\.|)youtube(?:\-nocookie|)\.com\/(?:watch\?.*(?:|\&)v=|embed|shorts\/|v\/)|youtu\.be\/)([-_0-9A-Za-z]{11})/
 Module({
     pattern: 'song ?(.*)',
-    fromMe: sourav,
+    fromMe: adarsh,
     desc: Lang.SONG_DESC
 }, (async (message, match) => {
     if (!match[1]) return message.sendReply(Lang.NEED_TEXT_SONG)
@@ -142,7 +142,7 @@ Module({
 }));
 Module({
     pattern: 'yts ?(.*)',
-    fromMe: sourav,
+    fromMe: adarsh,
     desc: "Select and download songs from yt (list)"
 }, (async (message, match) => {
     if (!match[1]) return message.sendReply("*Need words*")
@@ -173,7 +173,7 @@ Module({
 }));
 Module({
     on: 'button',
-    fromMe: sourav
+    fromMe: adarsh
 }, (async (message, match) => {
     if (message.list && message.list.startsWith("ytsl") && message.list.includes(message.client.user.id.split("@")[0].split(":")[0])) {
         const buttons = [{
