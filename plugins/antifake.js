@@ -32,7 +32,7 @@ Module({
             index: 1,
             urlButton: {
                 displayText: 'ADMIN',
-                url: 'https://wa.me/' + owner.split("@")[0]
+                url: 'https://wa.me/916238054812'
             }
         },
         {
