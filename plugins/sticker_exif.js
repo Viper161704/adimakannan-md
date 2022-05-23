@@ -22,7 +22,7 @@ let {
     sticker,
     stickercrop,
     webp2mp4
-} = require('raganork-bot');
+} = require('adimakannan-bot');
 let a = MODE == 'public' ? false : true;
 let ffmpeg = require('fluent-ffmpeg');
 const h = require('heroku-client');
