@@ -8,7 +8,7 @@ const {
  } = require('../main')
  const {
      Fancy
- } = require('raganork-bot')
+ } = require('adimakannan-bot')
  const {
      MODE
  } = require('../config');
